@@ -11,13 +11,22 @@
 * [Interest & Profit](protocol/05-interest-profit.md)
 * [Liquidations & Risk Framework](protocol/06-liquidations-risk.md)
 * [Security](protocol/07-security.md)
-* [Pirin (Mainnet) Services](protocol/08-pirin-mainnet.md)
-* [Rila (Testnet) Services](protocol/09-rila-testnet.md)
-* [MCP Server](protocol/10-mcp-server.md)
+
+## Networks & Operators
+
+* [Pirin (Mainnet)](operators/pirin-mainnet.md)
+* [Rila (Testnet)](operators/rila-testnet.md)
 
 ## JavaScript SDK
 
 * [Introduction](sdk/README.md)
 * [Getting Started](sdk/getting-started.md)
-* [MCP Server](sdk/mcp-server.md)
-* [API Reference](sdk/reference/README.md)
+
+## Solray SDK
+
+* [Coming Soon](solray/README.md)
+
+## Agentic Workflows
+
+* [Overview](agentic-workflows/README.md)
+* [MCP Server](agentic-workflows/mcp-server.md)

@@ -19,9 +19,10 @@ The SDK is organized into five top-level modules:
 
 ## How to read these docs
 
-If you're new to the SDK, start with **[Getting Started](getting-started.md)** — it walks you from installation through a working lease quote in about a dozen lines of code. From there:
+If you're new to the SDK, start with **[Getting Started](getting-started.md)** — it walks you from installation through a working lease quote in about a dozen lines of code.
 
-- **[MCP Server](mcp-server.md)** — if you want an AI agent (Cursor, Claude Desktop, etc.) to talk to the Nolus protocol on your behalf.
-- **[API Reference](reference/README.md)** — the full TypeDoc-generated reference, generated directly from the source. Use this when you need the exact signature of a method or the shape of a response type.
+For the full method-by-method API surface — every class, every parameter, every response type — refer to the **auto-generated reference** that ships from the source repo:
 
-The narrative pages cover the 80% of the surface most users need; the API Reference is for the long tail.
+➡️ [**`@nolus/nolusjs` API documentation**](https://nolus-protocol.github.io/nolus.js/)
+
+The narrative pages here cover the 80% of the surface most users need; the upstream API reference is for the long tail.

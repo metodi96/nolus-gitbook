@@ -16,22 +16,23 @@ import requests
 from bs4 import BeautifulSoup
 from markdownify import markdownify
 
+# Each article is (output_path_relative_to_repo, title, source_url).
+# The output path determines both the Markdown destination and the per-article
+# image directory: images live next to the file under <parent>/images/<stem>/.
 ARTICLES = [
-    ("01-overview", "Overview", "https://hub.nolus.io/en/articles/9680214-overview"),
-    ("02-borrow", "Borrow", "https://hub.nolus.io/en/articles/9680324-borrow"),
-    ("03-lend", "Lend", "https://hub.nolus.io/en/articles/9680477-lend"),
-    ("04-oracles-alarms", "Oracles & Alarms", "https://hub.nolus.io/en/articles/9680497-oracles-alarms"),
-    ("05-interest-profit", "Interest & Profit", "https://hub.nolus.io/en/articles/9680486-interest-profit"),
-    ("06-liquidations-risk", "Liquidations & Risk Framework", "https://hub.nolus.io/en/articles/11378238-liquidations-risk-framework"),
-    ("07-security", "Security", "https://hub.nolus.io/en/articles/9680739-security"),
-    ("08-pirin-mainnet", "Pirin (Mainnet) Services", "https://hub.nolus.io/en/articles/9680543-pirin-mainnet-services"),
-    ("09-rila-testnet", "Rila (Testnet) Services", "https://hub.nolus.io/en/articles/9685743-rila-testnet-services"),
-    ("10-mcp-server", "MCP Server", "https://hub.nolus.io/en/articles/14005928-mcp-server"),
+    ("protocol/01-overview.md", "Overview", "https://hub.nolus.io/en/articles/9680214-overview"),
+    ("protocol/02-borrow.md", "Borrow", "https://hub.nolus.io/en/articles/9680324-borrow"),
+    ("protocol/03-lend.md", "Lend", "https://hub.nolus.io/en/articles/9680477-lend"),
+    ("protocol/04-oracles-alarms.md", "Oracles & Alarms", "https://hub.nolus.io/en/articles/9680497-oracles-alarms"),
+    ("protocol/05-interest-profit.md", "Interest & Profit", "https://hub.nolus.io/en/articles/9680486-interest-profit"),
+    ("protocol/06-liquidations-risk.md", "Liquidations & Risk Framework", "https://hub.nolus.io/en/articles/11378238-liquidations-risk-framework"),
+    ("protocol/07-security.md", "Security", "https://hub.nolus.io/en/articles/9680739-security"),
+    ("operators/pirin-mainnet.md", "Pirin (Mainnet) Services", "https://hub.nolus.io/en/articles/9680543-pirin-mainnet-services"),
+    ("operators/rila-testnet.md", "Rila (Testnet) Services", "https://hub.nolus.io/en/articles/9685743-rila-testnet-services"),
+    ("agentic-workflows/README.md", "MCP Server", "https://hub.nolus.io/en/articles/14005928-mcp-server"),
 ]
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
-OUT_DIR = REPO_ROOT / "protocol"
-IMG_DIR = OUT_DIR / "images"
 
 
 def fetch(url: str) -> str:
@@ -47,7 +48,7 @@ def download_image(src: str, dest: Path) -> None:
     dest.write_bytes(r.content)
 
 
-def localize_images(soup_body, slug: str) -> None:
+def localize_images(soup_body, image_dir: Path, image_slug: str) -> None:
     """Download every <img> inside the body and rewrite its src to a local path."""
     for img in soup_body.select("img"):
         src = img.get("src")
@@ -56,27 +57,26 @@ def localize_images(soup_body, slug: str) -> None:
         # Derive a filename from the URL path; ignore the query string (signed-URL noise).
         path = urlparse(src).path
         name = Path(path).name or "image"
-        local_rel = f"images/{slug}/{name}"
-        local_abs = OUT_DIR / "images" / slug / name
+        local_rel = f"images/{image_slug}/{name}"
+        local_abs = image_dir / name
         try:
             download_image(src, local_abs)
         except Exception as exc:
             print(f"    warn: failed to download {src}: {exc}", flush=True)
             continue
         img["src"] = local_rel
-        # Drop srcset — it would still point at the remote CDN.
         if img.has_attr("srcset"):
             del img["srcset"]
 
 
-def extract_body(html: str, slug: str) -> str:
+def extract_body(html: str, image_dir: Path, image_slug: str) -> str:
     soup = BeautifulSoup(html, "html.parser")
     body = soup.select_one("div.article_body") or soup.select_one("article")
     if body is None:
         raise RuntimeError("article body not found")
     for tag in body.select("script, style, noscript"):
         tag.decompose()
-    localize_images(body, slug)
+    localize_images(body, image_dir, image_slug)
     return str(body)
 
 
@@ -93,18 +93,20 @@ def clean_md(md: str) -> str:
 
 
 def main() -> int:
-    OUT_DIR.mkdir(parents=True, exist_ok=True)
-    for slug, title, url in ARTICLES:
-        print(f"  fetching {title} ...", flush=True)
+    for rel_path, title, url in ARTICLES:
+        out_file = REPO_ROOT / rel_path
+        out_file.parent.mkdir(parents=True, exist_ok=True)
+        image_slug = out_file.stem
+        image_dir = out_file.parent / "images" / image_slug
+        print(f"  fetching {title} -> {rel_path} ...", flush=True)
         html = fetch(url)
-        body_html = extract_body(html, slug)
+        body_html = extract_body(html, image_dir, image_slug)
         md = markdownify(body_html, heading_style="ATX", bullets="-")
         md = clean_md(md)
         front = f"# {title}\n\n_Source: {url}_\n\n"
-        (OUT_DIR / f"{slug}.md").write_text(front + md, encoding="utf-8")
+        out_file.write_text(front + md, encoding="utf-8")
         time.sleep(0.5)
-    print(f"wrote {len(ARTICLES)} files to {OUT_DIR}")
-    print(f"images saved under {IMG_DIR}")
+    print(f"wrote {len(ARTICLES)} articles")
     return 0
 
 

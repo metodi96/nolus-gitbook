@@ -2,7 +2,7 @@
 
 _Source: https://hub.nolus.io/en/articles/9680543-pirin-mainnet-services_
 
-[![](images/08-pirin-mainnet/1692797716371-nolus_core_header-min.jpg)](https://downloads.intercomcdn.com/i/o/1130256184/be5bd40c64c7ca57c06012be/1692797716371-nolus_core_header-min.jpg?expires=1778235300&signature=bb6ce5733f8602d811f56ff400f744dca4b0cadb802fb0c35300a935e3df0f80&req=dSEkFst7m4BXXfMW1HO4zdZTeMRM81ZKL4gTX52EsmogoFvc%2BNpqr6ckcsm%2F%0ATa6lCcm3dJgt3AOpAKE%3D%0A)
+[![](images/pirin-mainnet/1692797716371-nolus_core_header-min.jpg)](https://downloads.intercomcdn.com/i/o/1130256184/be5bd40c64c7ca57c06012be/1692797716371-nolus_core_header-min.jpg?expires=1778235300&signature=bb6ce5733f8602d811f56ff400f744dca4b0cadb802fb0c35300a935e3df0f80&req=dSEkFst7m4BXXfMW1HO4zdZTeMRM81ZKL4gTX52EsmogoFvc%2BNpqr6ckcsm%2F%0ATa6lCcm3dJgt3AOpAKE%3D%0A)
 
 The Nolus Pirin (Mainnet) launched on May 23rd, 2023, at 15:00 UTC. Please, check out the instructions below on how to run a service on mainnet
 

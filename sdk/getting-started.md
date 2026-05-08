@@ -142,6 +142,6 @@ const privateKey = await KeyUtils.getPrivateKeyFromMnemonic(mnemonic, path);
 
 ## Where to go next
 
-- For a complete list of every method on every contract, head to **[API Reference](reference/README.md)**.
-- To wire an AI agent up to Nolus, see **[MCP Server](mcp-server.md)**.
-- For the protocol concepts behind these calls (leverage model, liquidation engine, oracle), see the **Protocol Documentation** section in the sidebar.
+- For a complete list of every method on every contract — every parameter, every response type — see the upstream auto-generated reference: [**`@nolus/nolusjs` API documentation**](https://nolus-protocol.github.io/nolus.js/).
+- To let an AI agent drive the protocol on your behalf, see the **Agentic Workflows** section in the sidebar.
+- For the protocol concepts behind these calls (leverage model, liquidation engine, oracle), see the **Protocol Documentation** section.
