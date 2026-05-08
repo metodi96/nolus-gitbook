@@ -2,7 +2,7 @@
 
 _Source: https://hub.nolus.io/en/articles/11378238-liquidations-risk-framework_
 
-[![](https://downloads.intercomcdn.com/i/o/hbjifswh/1521638051/33b4311553f173a4a0b51e4db75c/1692278487457-price_update.png?expires=1778234400&signature=30d4d89edb4249112be44254aa9c05888bf198d6bfbd7aff2ade9b7c81688538&req=dSUlF899lYFaWPMW1HO4zXwWBBHu1RewE3K%2BWWEzz6IkXmxA1XPXaT%2Brd5nW%0AAWwCjNIYp%2Fa1WUiJrxQ%3D%0A)](https://downloads.intercomcdn.com/i/o/hbjifswh/1521638051/33b4311553f173a4a0b51e4db75c/1692278487457-price_update.png?expires=1778234400&signature=30d4d89edb4249112be44254aa9c05888bf198d6bfbd7aff2ade9b7c81688538&req=dSUlF899lYFaWPMW1HO4zXwWBBHu1RewE3K%2BWWEzz6IkXmxA1XPXaT%2Brd5nW%0AAWwCjNIYp%2Fa1WUiJrxQ%3D%0A)
+[![](images/06-liquidations-risk/1692278487457-price_update.png)](https://downloads.intercomcdn.com/i/o/hbjifswh/1521638051/33b4311553f173a4a0b51e4db75c/1692278487457-price_update.png?expires=1778235300&signature=9cb4ce27f095626bb476c62e9b4a6acf4df7085b5c17f2a3939837dae5e8a897&req=dSUlF899lYFaWPMW1HO4zXwWBBHu1Ra3E3K%2BWWEzz6LdBFnv8QjxvhDkJybg%0AfDQfmL8JmcuDmTpCGVA%3D%0A)
 
 ## **Liquidations**
 
@@ -83,9 +83,3 @@ When an asset reaches its predefined risk threshold:
 - Nolus continues to monitor the asset’s loan-to-liquidity ratio.
 
 If this ratio improves—i.e., loans decrease or liquidity increases—the asset can be reinstated for new margin operations.
-
----
-
-Related Articles
-
-[Understanding Nolus Asset-Backed Margin Leverage](https://hub.nolus.io/en/articles/9679605-understanding-nolus-asset-backed-margin-leverage)[Fee Structure](https://hub.nolus.io/en/articles/9679651-fee-structure)

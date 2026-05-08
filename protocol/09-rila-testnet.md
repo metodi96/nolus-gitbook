@@ -2,7 +2,7 @@
 
 _Source: https://hub.nolus.io/en/articles/9685743-rila-testnet-services_
 
-[![](https://downloads.intercomcdn.com/i/o/1131521915/9542fdac53a70949fef1257e/1692797747600-nolus_core_header-min.jpg?expires=1778234400&signature=2d663a0872f26e0732a5acee7dfb60337d3366e3bac0c19e41980ce19a31bfcd&req=dSEkF8x8nIheXPMW1HO4zWW67%2FHw6DO2aA0tHojxLFQjnUQc2%2BlcgvU2cgqU%0A2cEGH%2B2qynX0HjkHKDw%3D%0A)](https://downloads.intercomcdn.com/i/o/1131521915/9542fdac53a70949fef1257e/1692797747600-nolus_core_header-min.jpg?expires=1778234400&signature=2d663a0872f26e0732a5acee7dfb60337d3366e3bac0c19e41980ce19a31bfcd&req=dSEkF8x8nIheXPMW1HO4zWW67%2FHw6DO2aA0tHojxLFQjnUQc2%2BlcgvU2cgqU%0A2cEGH%2B2qynX0HjkHKDw%3D%0A)
+[![](images/09-rila-testnet/1692797747600-nolus_core_header-min.jpg)](https://downloads.intercomcdn.com/i/o/1131521915/9542fdac53a70949fef1257e/1692797747600-nolus_core_header-min.jpg?expires=1778235300&signature=04d0e1279dc5f8cfad756f2717421e6eda5a54e0dfb18f308df55efa2c826383&req=dSEkF8x8nIheXPMW1HO4zWW67%2FHw6DKxaA0tHojxLFRpmicw14f0Ah%2FqMOKD%0AskPCJ1k%2BmGW1IElTRC4%3D%0A)
 
 The current Nolus testnet, Rila (rila-3), launched on 25th of June, 2024, at 07:28 UTC. Please see the instructions below on how to start and operate a Rila blockchain service.
 

@@ -2,7 +2,7 @@
 
 _Source: https://hub.nolus.io/en/articles/9680497-oracles-alarms_
 
-[![](https://downloads.intercomcdn.com/i/o/hbjifswh/1527053201/a5e23598ff7205047445f8e6a67a/market_data_price_oracle.png?expires=1778234400&signature=ef527000f0843bfbbe07940096084b54a68719403662005278a4d8575ff79fa1&req=dSUlEcl7noNfWPMW1HO4zdPPJgFL26e4bnNal1KjFeSc8IPSpUcQGbwPDhxn%0AvcDY6BVRRd18SOLieEA%3D%0A)](https://downloads.intercomcdn.com/i/o/hbjifswh/1527053201/a5e23598ff7205047445f8e6a67a/market_data_price_oracle.png?expires=1778234400&signature=ef527000f0843bfbbe07940096084b54a68719403662005278a4d8575ff79fa1&req=dSUlEcl7noNfWPMW1HO4zdPPJgFL26e4bnNal1KjFeSc8IPSpUcQGbwPDhxn%0AvcDY6BVRRd18SOLieEA%3D%0A)
+[![](images/04-oracles-alarms/market_data_price_oracle.png)](https://downloads.intercomcdn.com/i/o/hbjifswh/1527053201/a5e23598ff7205047445f8e6a67a/market_data_price_oracle.png?expires=1778235300&signature=c0a8cc3940247df6f6c9c694ce05c3d4fed4cbbab5ea225b89f3fc2025441f70&req=dSUlEcl7noNfWPMW1HO4zdPPJgFL26a%2FbnNal1KjFeSgV%2BM4H44aLT1GDfA5%0AJYfPtR7oJIreQxM5g1k%3D%0A)
 
 # Market Data Price Oracle
 
@@ -21,9 +21,3 @@ Price feeders use an Exponential Moving Average (EMA) algorithm to determine cry
 ## Global Time Oracle
 
 The Global Time Oracle is an on-chain timing mechanism that updates based on the latest Market Data Price Feed’s Tendermint block time. Its Global Time Alarm enables notifications when specific time thresholds are reached, ensuring synchronized timing across system components.
-
----
-
-Related Articles
-
-[Manage a Margin Position](https://hub.nolus.io/en/articles/9679883-manage-a-margin-position)

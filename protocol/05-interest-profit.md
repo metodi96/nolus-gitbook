@@ -13,9 +13,3 @@ Additional parameters will further account for expected market dynamics, ensurin
 The system features a profit instance per supported market (e.g., USDC long on Osmosis) that collects a protocol interest rate (e.g., 8%). While funds are primarily managed in LPN currencies, other supported currencies are also handled. For instance, if the collateral is in BTC and the position asset is in ETH, the resulting swap tax might be in either currency.
 
 This Profit contract’s primary role is to gather, swap into NLS, and transfer the total to the Treasury account.
-
----
-
-Related Articles
-
-[Understanding Nolus Asset-Backed Margin Leverage](https://hub.nolus.io/en/articles/9679605-understanding-nolus-asset-backed-margin-leverage)[Open a Margin Leverage Position](https://hub.nolus.io/en/articles/9679877-open-a-margin-leverage-position)[Protocol Stats](https://hub.nolus.io/en/articles/9681234-protocol-stats)

@@ -12,7 +12,7 @@ Each nLPN token reflects a fraction of the total pool value, including both the 
 
 When a lender redeems their nLPN tokens, they receive their share of the pool (principal plus accrued interest) based on the current nLPN exchange rate at the time of withdrawal.
 
-[![](https://downloads.intercomcdn.com/i/o/hbjifswh/1527049865/675cb6996ea9a247f7238ecf56f6/lend.png?expires=1778234400&signature=4a89d339d8f357a193fb803e2b92acd7f8cec6f44799802418eb36b7eafb1830&req=dSUlEcl6lIlZXPMW1HO4zereHaB8lhC%2BHdBCc4h%2BeCXyXcTVmJKvC6YotOs1%0AZlcnxIpq%2FSI9rImul6w%3D%0A)](https://downloads.intercomcdn.com/i/o/hbjifswh/1527049865/675cb6996ea9a247f7238ecf56f6/lend.png?expires=1778234400&signature=4a89d339d8f357a193fb803e2b92acd7f8cec6f44799802418eb36b7eafb1830&req=dSUlEcl6lIlZXPMW1HO4zereHaB8lhC%2BHdBCc4h%2BeCXyXcTVmJKvC6YotOs1%0AZlcnxIpq%2FSI9rImul6w%3D%0A)
+[![](images/03-lend/lend.png)](https://downloads.intercomcdn.com/i/o/hbjifswh/1527049865/675cb6996ea9a247f7238ecf56f6/lend.png?expires=1778235300&signature=d2585037b3ecbcba788147094eaae8a63485d21034e865f80cc7b09766779898&req=dSUlEcl6lIlZXPMW1HO4zereHaB8lhG5HdBCc4h%2BeCX3ktI4mmrylUOuPgbO%0Al7X94aCM0vNTTl7V9KQ%3D%0A)
 
 # **Deposit LPN (Mint nLPN)**
 
@@ -88,9 +88,3 @@ When a claim is made, the pending uNLS is transferred to the lender’s address 
 ## **Treasury**
 
 The Treasury is a single-instance smart contract responsible for calculating uNLS rewards across all LPPs based on their individual TVLs and the network-wide aggregate. Each LPP reports its TVL directly to the Treasury, which uses governance-defined threshold intervals to determine the applicable APR. These thresholds start from a minimum value and adjust as higher tiers are reached. Reward distribution is performed periodically, with duration measured in hours.
-
----
-
-Related Articles
-
-[NLS Structure, Utility & Accrual](https://hub.nolus.io/en/articles/9679631-nls-structure-utility-accrual)[Fee Structure](https://hub.nolus.io/en/articles/9679651-fee-structure)[Earn on Idle Assets](https://hub.nolus.io/en/articles/9680025-earn-on-idle-assets)[2025.8](https://hub.nolus.io/en/articles/12001022-2025-8)

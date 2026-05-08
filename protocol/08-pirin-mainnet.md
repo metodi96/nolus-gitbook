@@ -2,7 +2,7 @@
 
 _Source: https://hub.nolus.io/en/articles/9680543-pirin-mainnet-services_
 
-[![](https://downloads.intercomcdn.com/i/o/1130256184/be5bd40c64c7ca57c06012be/1692797716371-nolus_core_header-min.jpg?expires=1778234400&signature=f89411cb435ea9b0379b7637a49fd00fd2d618709f693b752c70beb59d39ec7f&req=dSEkFst7m4BXXfMW1HO4zdZTeMRM81dNL4gTX52Esmqzwdz0sGnghH7jh3qk%0Agv2o9tGo6lWooe0InCM%3D%0A)](https://downloads.intercomcdn.com/i/o/1130256184/be5bd40c64c7ca57c06012be/1692797716371-nolus_core_header-min.jpg?expires=1778234400&signature=f89411cb435ea9b0379b7637a49fd00fd2d618709f693b752c70beb59d39ec7f&req=dSEkFst7m4BXXfMW1HO4zdZTeMRM81dNL4gTX52Esmqzwdz0sGnghH7jh3qk%0Agv2o9tGo6lWooe0InCM%3D%0A)
+[![](images/08-pirin-mainnet/1692797716371-nolus_core_header-min.jpg)](https://downloads.intercomcdn.com/i/o/1130256184/be5bd40c64c7ca57c06012be/1692797716371-nolus_core_header-min.jpg?expires=1778235300&signature=bb6ce5733f8602d811f56ff400f744dca4b0cadb802fb0c35300a935e3df0f80&req=dSEkFst7m4BXXfMW1HO4zdZTeMRM81ZKL4gTX52EsmogoFvc%2BNpqr6ckcsm%2F%0ATa6lCcm3dJgt3AOpAKE%3D%0A)
 
 The Nolus Pirin (Mainnet) launched on May 23rd, 2023, at 15:00 UTC. Please, check out the instructions below on how to run a service on mainnet
 
@@ -645,9 +645,3 @@ hermes start
 | Nolus Pirin Mainnet | pirin-1 | channel-10177 | Axelar Mainnet | axelar-dojo-1 | channel-143 |
 
 In addition, by design, Nolus opens new ICA channels for each lease (borrow) position opened.
-
----
-
-Related Articles
-
-[NLS Structure, Utility & Accrual](https://hub.nolus.io/en/articles/9679631-nls-structure-utility-accrual)[2026.1](https://hub.nolus.io/en/articles/13531733-2026-1)[MCP Server](https://hub.nolus.io/en/articles/14005928-mcp-server)

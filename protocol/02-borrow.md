@@ -2,7 +2,7 @@
 
 _Source: https://hub.nolus.io/en/articles/9680324-borrow_
 
-[![](https://downloads.intercomcdn.com/i/o/hbjifswh/1525422239/df4178d952ca0bb82c78cdbd47f6/borrow.png?expires=1778234400&signature=526bb636e9a0fc7f6168aed438aed597431df5cc4a9da3ad1cbeb520ae7cdc66&req=dSUlE818n4NcUPMW1HO4zd6az9Wd3XajnZH6HBKoXv48zLA00wg2M%2FxRVAZi%0ASJdNcwFdDotPYRz7ZO0%3D%0A)](https://downloads.intercomcdn.com/i/o/hbjifswh/1525422239/df4178d952ca0bb82c78cdbd47f6/borrow.png?expires=1778234400&signature=526bb636e9a0fc7f6168aed438aed597431df5cc4a9da3ad1cbeb520ae7cdc66&req=dSUlE818n4NcUPMW1HO4zd6az9Wd3XajnZH6HBKoXv48zLA00wg2M%2FxRVAZi%0ASJdNcwFdDotPYRz7ZO0%3D%0A)
+[![](images/02-borrow/borrow.png)](https://downloads.intercomcdn.com/i/o/hbjifswh/1525422239/df4178d952ca0bb82c78cdbd47f6/borrow.png?expires=1778235300&signature=0e891d5ea4c0519559be9e32187ddc67921c176fea431dff328172a6e1de9b34&req=dSUlE818n4NcUPMW1HO4zd6az9Wd3XeknZH6HBKoXv6lyjRkkNQ48ngzQwm2%0ARdHe9xEVeIGRD3g2XIE%3D%0A)
 
 Each supported denomination has a dedicated Liquidity Providers’ Pool (LPP) instance that handles all borrow requests and repayments in that currency. The LPP calculates a fixed interest rate for each loan, tracks the total principal and interest due, and maintains records of all active loans. An LPP operates exclusively in its native currency - called the Liquidity Pool’s Native (LPN) denomination - and does not interact with other assets.
 
@@ -154,7 +154,7 @@ Each time a loan is issued, the Liquidity Providers’ Pool (LPP) stores key dat
 
 A simplified step-by-step overview of the margin position opening process is illustrated in the diagram below.
 
-[![](https://downloads.intercomcdn.com/i/o/hbjifswh/1525418863/39133f4419ee425aae3f73ba7395/open_lease.png?expires=1778234400&signature=9485260036f52856c28e65166554bfe7cefff2112bc63c6974d2ee63b51cde10&req=dSUlE81%2FlYlZWvMW1HO4zQTIjGPZ%2F%2FTXMoMQ0SwBXYb3%2BMCY6cYXUayxa9cw%0Aj1%2BPajEU2Bb%2FHm7aSYE%3D%0A)](https://downloads.intercomcdn.com/i/o/hbjifswh/1525418863/39133f4419ee425aae3f73ba7395/open_lease.png?expires=1778234400&signature=9485260036f52856c28e65166554bfe7cefff2112bc63c6974d2ee63b51cde10&req=dSUlE81%2FlYlZWvMW1HO4zQTIjGPZ%2F%2FTXMoMQ0SwBXYb3%2BMCY6cYXUayxa9cw%0Aj1%2BPajEU2Bb%2FHm7aSYE%3D%0A)
+[![](images/02-borrow/open_lease.png)](https://downloads.intercomcdn.com/i/o/hbjifswh/1525418863/39133f4419ee425aae3f73ba7395/open_lease.png?expires=1778235300&signature=66bc491d7fd6ab985d8192af690ae5f4ac570e59eac843084ae0216992e54e47&req=dSUlE81%2FlYlZWvMW1HO4zQTIjGPZ%2F%2FXQMoMQ0SwBXYa727CFPtzaFJh%2F40i7%0A%2B9TE9XJ9MqV8L5vNKno%3D%0A)
 
 **4. Cross-Chain Interactions**  
 Once the borrowed funds are deposited into the position contract, an Interchain Account (ICA) is opened on the target host network (e.g., Osmosis). An ICA behaves like a standard account on the host chain - it can perform actions such as staking, sending tokens, or voting, but unlike traditional accounts, it does not rely on private key signatures. Instead, it is controlled via the Inter-Blockchain Communication (IBC) protocol by a designated controller account - in this case, the margin position contract instance deployed on the Nolus chain.
@@ -200,7 +200,7 @@ At this point, the user can close the position by transferring the remaining ass
 
 The diagram below illustrates the complete state flow of a margin position - from creation through activation, repayment, or liquidation, and final closure.
 
-[![](https://downloads.intercomcdn.com/i/o/hbjifswh/1525423573/e54c3e0eee644b21c995c852232a/lease_states.jpg?expires=1778234400&signature=051b8578a1707b776098688b9ab1af65f262fdd285292d4ee526618ef2bfb093&req=dSUlE818noRYWvMW1HO4zdXXfMrghPXvWn3LXufRcgpw0TM6Qyx0Kdf%2F6Csc%0AzFRVx6YhwfUnQP6CoWg%3D%0A)](https://downloads.intercomcdn.com/i/o/hbjifswh/1525423573/e54c3e0eee644b21c995c852232a/lease_states.jpg?expires=1778234400&signature=051b8578a1707b776098688b9ab1af65f262fdd285292d4ee526618ef2bfb093&req=dSUlE818noRYWvMW1HO4zdXXfMrghPXvWn3LXufRcgpw0TM6Qyx0Kdf%2F6Csc%0AzFRVx6YhwfUnQP6CoWg%3D%0A)
+[![](images/02-borrow/lease_states.jpg)](https://downloads.intercomcdn.com/i/o/hbjifswh/1525423573/e54c3e0eee644b21c995c852232a/lease_states.jpg?expires=1778235300&signature=cb3005298fe27d1742d510162e8b7025106c1abfcd080d645c29fbcdecc0b39a&req=dSUlE818noRYWvMW1HO4zdXXfMrghPToWn3LXufRcgrN7EyE3Z88Jid9wpiK%0A9vPUGFS2wq0ysIe8IpM%3D%0A)
 
 # **Query Position Status**
 
@@ -265,7 +265,7 @@ However, if the position is **fully closed** - either via full repayment or full
 
 This ensures a seamless experience in full close scenarios, while maintaining control and flexibility in partial settlement cases.
 
-[![](https://downloads.intercomcdn.com/i/o/hbjifswh/1525419338/1f37a37bc249717c5d8ef32d3e7f/repay.png?expires=1778234400&signature=b2d0c8313fdaab905cae7efd655d6e980ea3cf9bcffff1bc5c6872cc9a203754&req=dSUlE81%2FlIJcUfMW1HO4zRfp47r%2BjOs9NoAQRZM43Bdz4Cv%2Bf1OfYD0OMGVc%0AmdsSkUCYBRrJKn26Ves%3D%0A)](https://downloads.intercomcdn.com/i/o/hbjifswh/1525419338/1f37a37bc249717c5d8ef32d3e7f/repay.png?expires=1778234400&signature=b2d0c8313fdaab905cae7efd655d6e980ea3cf9bcffff1bc5c6872cc9a203754&req=dSUlE81%2FlIJcUfMW1HO4zRfp47r%2BjOs9NoAQRZM43Bdz4Cv%2Bf1OfYD0OMGVc%0AmdsSkUCYBRrJKn26Ves%3D%0A)
+[![](images/02-borrow/repay.png)](https://downloads.intercomcdn.com/i/o/hbjifswh/1525419338/1f37a37bc249717c5d8ef32d3e7f/repay.png?expires=1778235300&signature=f1f88a4df81a29b005df0e08a9cfd2c2a64191b32849abcb3b4e3fff69087a6d&req=dSUlE81%2FlIJcUfMW1HO4zRfp47r%2BjOo6NoAQRZM43BfbMHGO1mAX2LIaeLsF%0AK1Y2ljp6ywCSnnVFc5M%3D%0A)
 
 #### **Manual Repayment Flow:**
 
@@ -383,9 +383,3 @@ In a partial close, the borrower uses only the assets within the position to set
    - The remaining unutilized assets in the position
 
    Until claimed, these funds remain locked within the contract, and the position remains in status "**Paid".** Once they are claimed, the position's status changes to "**Closed"**.
-
----
-
-Related Articles
-
-[Understanding Nolus Asset-Backed Margin Leverage](https://hub.nolus.io/en/articles/9679605-understanding-nolus-asset-backed-margin-leverage)[Manage a Margin Position](https://hub.nolus.io/en/articles/9679883-manage-a-margin-position)[Interest & Profit](https://hub.nolus.io/en/articles/9680486-interest-profit)[Liquidations & Risk Framework](https://hub.nolus.io/en/articles/11378238-liquidations-risk-framework)

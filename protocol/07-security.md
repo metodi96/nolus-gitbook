@@ -2,7 +2,7 @@
 
 _Source: https://hub.nolus.io/en/articles/9680739-security_
 
-[![](https://downloads.intercomcdn.com/i/o/1130310037/ab960f4beb806092f893533c/1692798099525-security_header-min.png?expires=1778234400&signature=692dcc6b5095cd37b802a21d705a39470de47e1c702c16f64dc957115375a72a&req=dSEkFsp%2FnYFcXvMW1HO4zYgLHD%2B1n8OQp7kpnQUzxqMlGBjlKgZjXVorHV4f%0AlCECVdD9rQrD1vWwgfE%3D%0A)](https://downloads.intercomcdn.com/i/o/1130310037/ab960f4beb806092f893533c/1692798099525-security_header-min.png?expires=1778234400&signature=692dcc6b5095cd37b802a21d705a39470de47e1c702c16f64dc957115375a72a&req=dSEkFsp%2FnYFcXvMW1HO4zYgLHD%2B1n8OQp7kpnQUzxqMlGBjlKgZjXVorHV4f%0AlCECVdD9rQrD1vWwgfE%3D%0A)
+[![](images/07-security/1692798099525-security_header-min.png)](https://downloads.intercomcdn.com/i/o/1130310037/ab960f4beb806092f893533c/1692798099525-security_header-min.png?expires=1778235300&signature=106fb9bdfd22aca7903d4d0b9c5750a070093f1082051686869425f9f957202d&req=dSEkFsp%2FnYFcXvMW1HO4zYgLHD%2B1n8KXp7kpnQUzxqMdMzU6%2BdZjtjL5Uzw0%0AcW%2BRF%2BUYxTjjAjpATHY%3D%0A)
 
 Nolus Protocol prioritizes security, dedicating substantial resources to ensure reliability and safety. The team maintains transparency by making contracts and balances publicly accessible for verification. To further enhance security, Nolus has undergone comprehensive audits by reputable firms such as Oak Security and Halborn, with reports available for public review.
 
@@ -30,9 +30,3 @@ The Nolus Bounty Program embodies our commitment to community-driven security re
 - Deletion or tampering with user data
 
 To participate, submit a detailed report, written or video, with reproducible steps for the identified vulnerability to [email protected]. Nolus ensures prompt acknowledgment of all submissions and appreciates your contributions to making our platform more secure.
-
----
-
-Related Articles
-
-[Understanding the Risks Involved](https://hub.nolus.io/en/articles/9679595-understanding-the-risks-involved)
