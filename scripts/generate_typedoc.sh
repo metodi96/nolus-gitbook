@@ -13,6 +13,7 @@ yarn install --silent
 yarn add --dev --silent typedoc-plugin-markdown
 npx typedoc src/index.ts --plugin typedoc-plugin-markdown --out md-docs --readme none
 
-rm -rf "$REPO_ROOT/sdk"
-cp -r md-docs "$REPO_ROOT/sdk"
-echo "wrote SDK reference to $REPO_ROOT/sdk"
+rm -rf "$REPO_ROOT/sdk/reference"
+mkdir -p "$REPO_ROOT/sdk"
+cp -r md-docs "$REPO_ROOT/sdk/reference"
+echo "wrote SDK reference to $REPO_ROOT/sdk/reference"

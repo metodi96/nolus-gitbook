@@ -17,4 +17,7 @@
 
 ## JavaScript SDK
 
-* [Reference Index](sdk/README.md)
+* [Introduction](sdk/README.md)
+* [Getting Started](sdk/getting-started.md)
+* [MCP Server](sdk/mcp-server.md)
+* [API Reference](sdk/reference/README.md)
